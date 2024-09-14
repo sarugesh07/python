@@ -1,0 +1,50 @@
+from tkinter import *
+r=Tk()
+r.geometry=("300x300")
+r.title("register page")
+l1=Label (r,text="student name")
+l1.grid(row=0,column=1)
+l2=Label(r,text="department")
+l2.grid(row=1,column=1)
+l3=Label(r,text="12th mark")
+l3.grid(row=2,column=1)
+l4=Label(r,text="11th mark")
+l4.grid(row=3,column=1)
+l5=Label(r,text="10th mark")
+l5.grid(row=4,column=1)
+l6=Label(r,text= "permanantAddress")
+l6.grid(row=5,column=1)
+l7=Label(r,text="communication Address")
+l7.grid(row=6,column=1)
+
+
+
+e1=Entry(r)
+e1.grid(row=0,column=2)
+e2=Entry(r)
+e2.grid(row=1,column=2)
+e3=Entry(r)
+e3.grid(row=2,column=2)
+e4=Entry(r)
+e4.grid(row=3,column=2)
+e5=Entry(r)
+e5.grid(row=4,column=2)
+e6=Entry(r)
+e6.grid(row=5,column=2)
+e7=Entry(r)
+e7.grid(row=6,column=2)
+
+
+
+
+def num():
+    a=(e1.get())
+    b=(e2.get())
+    c=int(e3.get())
+    d=int(e4.get())
+    e=int(e5.get())
+    f=(e6.get())
+    g=(e7.get())
+b=Button(r,text="Submit",activebackground="green")
+b.grid(row=7,column=2)
+r.mainloop()

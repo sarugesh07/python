@@ -1,0 +1,5 @@
+a=(input("enter the name"))
+b=int(input("enter the age"))
+c=int(input('enter the salary"))
+f=open("hand .txt","w")
+f.write("\n"+a+"\n"+str(b)+"\n"+str(c))
